@@ -1,3 +1,9 @@
+import Heading from "components/Heading";
+
 export default function App() {
-  return <div>App</div>;
+  return (
+    <div>
+      <Heading />
+    </div>
+  );
 }
