@@ -4,15 +4,6 @@ import { renderWithTheme } from "utils/test/helpers";
 
 import { Base } from "template";
 
-jest.mock("components/Header", () => {
-  return {
-    __esModule: true,
-    default: function Mock() {
-      return <header />;
-    }
-  };
-});
-
 describe("<Base/>", () => {
   it("should render header and content", () => {
     renderWithTheme(<Base />);
