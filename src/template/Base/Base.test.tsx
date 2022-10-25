@@ -20,7 +20,7 @@ describe("<Base/>", () => {
     const header = screen.getByRole("banner");
 
     expect(header).toBeInTheDocument();
-    expect(header.nextElementSibling).toHaveStyle({
+    expect(header.parentElement).toHaveStyle({
       "max-width": "71.25rem",
       padding: "2.5rem 1rem"
     });

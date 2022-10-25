@@ -7,8 +7,8 @@ import { Container, Main } from "./styles";
 export default function Baise() {
   return (
     <Main>
-      <Header />
       <Container>
+        <Header />
         <Outlet />
       </Container>
     </Main>
