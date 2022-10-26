@@ -19,7 +19,6 @@ ${({ theme }) => css`
   html,
   body {
     background: ${theme.colors.secondary};
-    color: ${theme.colors.text};
   }
   body {
     overflow-x: hidden;
@@ -42,6 +41,7 @@ ${({ theme }) => css`
   select,
   button {
     font: 400 1rem ${theme.font.family}, sans-serif;
+    color: ${theme.colors.text};
   }
   span {
     display: inline-block;
