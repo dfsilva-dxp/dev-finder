@@ -2,7 +2,7 @@ export default {
   title: "light",
 
   grid: {
-    container: " 74rem"
+    container: " 67.5rem"
   },
   border: {
     radius: "0.25rem",
