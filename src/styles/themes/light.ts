@@ -47,4 +47,4 @@ export default {
     light: "#E0E0E0",
     panel: "#FFFFFF"
   }
-} as const;
+};
