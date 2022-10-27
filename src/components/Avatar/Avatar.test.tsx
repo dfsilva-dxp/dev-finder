@@ -22,6 +22,6 @@ describe("<Avatar/>", () => {
       padding: "4px"
     });
 
-    expect(container.parentElement).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });
