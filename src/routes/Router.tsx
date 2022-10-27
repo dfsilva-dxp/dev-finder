@@ -4,10 +4,14 @@ import { Base } from "template";
 
 import { Home } from "pages";
 
-export default function Router() {
+interface IRouterProps {
+  onToggleTheme: () => void;
+}
+
+export default function Router({ onToggleTheme }: IRouterProps) {
   return (
     <Routes>
-      <Route path="/" element={<Base />}>
+      <Route path="/" element={<Base onToggleTheme={onToggleTheme} />}>
         <Route index element={<Home />} />
         <Route path="/others" element={<h1>Others</h1>} />
       </Route>

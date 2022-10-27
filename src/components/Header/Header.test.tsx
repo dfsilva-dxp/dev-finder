@@ -5,7 +5,8 @@ import Header from ".";
 
 describe("<Header/>", () => {
   it("should render a heading", () => {
-    renderWithTheme(<Header />);
+    const onToggleTheme = jest.fn();
+    renderWithTheme(<Header onToggleTheme={onToggleTheme} />);
 
     expect(
       screen.getByRole("heading", { name: /devFinder/i })
@@ -13,7 +14,8 @@ describe("<Header/>", () => {
   });
 
   it("should render a button", () => {
-    renderWithTheme(<Header />);
+    const onToggleTheme = jest.fn();
+    renderWithTheme(<Header onToggleTheme={onToggleTheme} />);
 
     expect(screen.getByRole("button", { name: /dark/i })).toBeInTheDocument();
   });

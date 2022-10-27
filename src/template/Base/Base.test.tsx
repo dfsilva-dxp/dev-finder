@@ -6,7 +6,10 @@ import { Base } from "template";
 
 describe("<Base/>", () => {
   it("should render header and content", () => {
-    const { container } = renderWithTheme(<Base />);
+    const onToggleTheme = jest.fn();
+    const { container } = renderWithTheme(
+      <Base onToggleTheme={onToggleTheme} />
+    );
 
     const header = screen.getByRole("banner");
 

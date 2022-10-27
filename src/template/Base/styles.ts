@@ -12,7 +12,6 @@ export const Container = styled.div`
     height: 100%;
     margin: 0 auto;
     padding: ${theme.spacings.large} ${theme.spacings.xsmall};
-
     display: flex;
     flex-direction: column;
     justify-content: center;
