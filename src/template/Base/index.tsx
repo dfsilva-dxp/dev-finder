@@ -4,7 +4,7 @@ import { Header } from "components";
 
 import { Container, Main } from "./styles";
 
-export default function Baise() {
+export default function Base() {
   return (
     <Main>
       <Container>
