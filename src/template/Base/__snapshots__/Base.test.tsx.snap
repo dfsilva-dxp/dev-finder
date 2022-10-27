@@ -59,7 +59,7 @@ exports[`<Base/> should render header and content 1`] = `
 
 .c1 {
   width: 100%;
-  max-width: 67.5rem;
+  max-width: 61.9375rem;
   height: 100%;
   margin: 0 auto;
   padding: 2.5rem 1rem;

@@ -12,7 +12,7 @@ describe("<Base/>", () => {
 
     expect(header).toBeInTheDocument();
     expect(header.parentElement).toHaveStyle({
-      "max-width": "67.5rem",
+      "max-width": "61.9375rem",
       padding: "2.5rem 1rem"
     });
 
