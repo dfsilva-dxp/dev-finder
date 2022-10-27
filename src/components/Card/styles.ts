@@ -77,7 +77,7 @@ export const Counters = styled.div`
 export const CountDisplay = styled.span`
   ${({ theme }) => css`
     padding: 0 ${theme.spacings.xxsmall};
-    color: ${theme.colors.light};
+    color: ${theme.colors.text};
 
     display: flex;
     flex-direction: column;

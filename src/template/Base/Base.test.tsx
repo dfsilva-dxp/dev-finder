@@ -8,7 +8,7 @@ describe("<Base/>", () => {
   it("should render header and content", () => {
     const onToggleTheme = jest.fn();
     const { container } = renderWithTheme(
-      <Base onToggleTheme={onToggleTheme} />
+      <Base onToggleTheme={onToggleTheme} theme="dark" />
     );
 
     const header = screen.getByRole("banner");

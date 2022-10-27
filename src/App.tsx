@@ -16,7 +16,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
-        <Router onToggleTheme={toggleTheme} />
+        <Router onToggleTheme={toggleTheme} theme={theme.title} />
         <GlobalStyles />
       </BrowserRouter>
     </ThemeProvider>
