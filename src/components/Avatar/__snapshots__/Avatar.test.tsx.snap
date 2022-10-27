@@ -2,7 +2,7 @@
 
 exports[`<Avatar/> should render currectly 1`] = `
 .c0 {
-  border: 2px solid #1F2A48;
+  border: 2px solid #E0E0E0;
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -15,17 +15,15 @@ exports[`<Avatar/> should render currectly 1`] = `
   border-radius: 50%;
 }
 
-<body>
-  <div>
-    <div
-      class="c0"
-    >
-      <img
-        alt="User Avatar"
-        src="my_url"
-        title="User Avatar"
-      />
-    </div>
+<div>
+  <div
+    class="c0"
+  >
+    <img
+      alt="User Avatar"
+      src="my_url"
+      title="User Avatar"
+    />
   </div>
-</body>
+</div>
 `;
