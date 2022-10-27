@@ -15,7 +15,7 @@ describe("<SearchForm", () => {
   });
 
   it("should changes its value when typing", async () => {
-    renderWithTheme(<SearchForm />);
+    const { container } = renderWithTheme(<SearchForm />);
 
     const input = screen.getByPlaceholderText(/search github username.../i);
     const text = "This is my new text";
@@ -25,5 +25,7 @@ describe("<SearchForm", () => {
     await waitFor(() => {
       expect(input).toHaveValue(text);
     });
+
+    expect(container).toMatchSnapshot();
   });
 });

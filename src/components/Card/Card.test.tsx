@@ -5,7 +5,7 @@ import Card from ".";
 
 describe("<Card/>", () => {
   it("should render currectly", () => {
-    renderWithTheme(<Card />);
+    const { container } = renderWithTheme(<Card />);
 
     expect(
       screen.getByRole("img", { name: /user avatar/i })
@@ -23,5 +23,7 @@ describe("<Card/>", () => {
     expect(
       screen.getByText(/Lorem ipsum dolor sit amet, consectetur adipis/i)
     ).toBeInTheDocument();
+
+    expect(container).toMatchSnapshot();
   });
 });

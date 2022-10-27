@@ -15,5 +15,7 @@ describe("<Header/>", () => {
     expect(
       screen.getByRole("heading", { name: /devFinder/i })
     ).toBeInTheDocument();
+
+    expect(screen.getByRole("button")).toBeInTheDocument();
   });
 });

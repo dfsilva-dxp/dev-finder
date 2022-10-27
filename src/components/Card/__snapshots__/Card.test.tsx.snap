@@ -1,0 +1,485 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card/> should render currectly 1`] = `
+.c1 {
+  border: 2px solid #E0E0E0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 4px;
+}
+
+.c1 img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.c0 {
+  background-color: #1F2A48;
+  border-radius: 0.25rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.c3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c3 h1 {
+  font-size: 1.25rem;
+}
+
+.c3 a,
+.c3 p {
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.c3 a {
+  display: block;
+  margin-top: 0.5rem;
+  color: #0178FF;
+}
+
+.c3 p {
+  color: #E0E0E0;
+}
+
+.c4 {
+  width: 100%;
+  padding: 1rem 0;
+  color: #E0E0E0;
+}
+
+.c5 {
+  width: 100%;
+  background-color: #141C2F;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+
+.c6 {
+  padding: 0 0.5rem;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.c6 strong {
+  font-size: 0.75rem;
+}
+
+.c6 span {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.c7 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.c7 div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.c7 div span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+<div>
+  <section
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <img
+        alt="User Avatar"
+        src="https://avatars.githubusercontent.com/u/16245261?v=4"
+        title="User Avatar"
+      />
+    </div>
+    <header
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <div>
+          <h1>
+            Daniel Silva
+          </h1>
+          <a
+            href="/link"
+          >
+            dfsilva-dxp
+          </a>
+        </div>
+        <p>
+          Joined 2 Fev 2020
+        </p>
+      </div>
+      <div
+        aria-labelledby="user-bio"
+        class="c4"
+        role="dialog"
+      >
+        <p
+          id="user-bio"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipis
+        </p>
+      </div>
+      <div
+        class="c5"
+      >
+        <span
+          class="c6"
+        >
+          <strong>
+            Repos
+          </strong>
+          <span>
+            9
+          </span>
+        </span>
+        <span
+          class="c6"
+        >
+          <strong>
+            Followers
+          </strong>
+          <span>
+            59
+          </span>
+        </span>
+        <span
+          class="c6"
+        >
+          <strong>
+            Following
+          </strong>
+          <span>
+            43
+          </span>
+        </span>
+      </div>
+      <footer
+        class="c7"
+      >
+        <div>
+          <span>
+            <svg
+              fill="currentColor"
+              height="18"
+              viewBox="0 0 256 256"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="none"
+                height="256"
+                width="256"
+              />
+              <line
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                x1="56"
+                x2="200"
+                y1="232"
+                y2="232"
+              />
+              <circle
+                cx="128"
+                cy="104"
+                fill="none"
+                r="32"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              />
+              <path
+                d="M208,104c0,72-80,128-80,128S48,176,48,104a80,80,0,0,1,160,0Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              />
+            </svg>
+             Suzano - SP
+          </span>
+          <span>
+            <svg
+              fill="currentColor"
+              height="18"
+              viewBox="0 0 256 256"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="none"
+                height="256"
+                width="256"
+              />
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                x1="94.1"
+                x2="161.9"
+                y1="161.9"
+                y2="94"
+              />
+              <path
+                d="M145,178.9l-28.3,28.3a48,48,0,0,1-67.9-67.9L77.1,111"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              />
+              <path
+                d="M178.9,145l28.3-28.3a48,48,0,0,0-67.9-67.9L111,77.1"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              />
+            </svg>
+             www.dfsilva.dev
+          </span>
+        </div>
+        <div>
+          <span>
+            <svg
+              fill="currentColor"
+              height="18"
+              viewBox="0 0 256 256"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="none"
+                height="256"
+                width="256"
+              />
+              <path
+                d="M128,88c0-22,18.5-40.3,40.5-40a40,40,0,0,1,36.2,24H240l-32.3,32.3A127.9,127.9,0,0,1,80,224c-32,0-40-12-40-12s32-12,48-36c0,0-64-32-48-120,0,0,40,40,88,48Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              />
+            </svg>
+             dfsilva.dxp
+          </span>
+          <span>
+            <svg
+              fill="currentColor"
+              height="18"
+              viewBox="0 0 256 256"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="none"
+                height="256"
+                width="256"
+              />
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                x1="16"
+                x2="240"
+                y1="216"
+                y2="216"
+              />
+              <path
+                d="M144,216V40a8,8,0,0,0-8-8H40a8,8,0,0,0-8,8V216"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              />
+              <path
+                d="M224,216V104a8,8,0,0,0-8-8H144"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              />
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                x1="64"
+                x2="96"
+                y1="72"
+                y2="72"
+              />
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                x1="80"
+                x2="112"
+                y1="136"
+                y2="136"
+              />
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                x1="64"
+                x2="96"
+                y1="176"
+                y2="176"
+              />
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                x1="176"
+                x2="192"
+                y1="176"
+                y2="176"
+              />
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                x1="176"
+                x2="192"
+                y1="136"
+                y2="136"
+              />
+            </svg>
+             GWCloud
+          </span>
+        </div>
+      </footer>
+    </header>
+  </section>
+</div>
+`;

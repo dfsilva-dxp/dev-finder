@@ -15,7 +15,10 @@ describe("<Base/>", () => {
 
     expect(header).toBeInTheDocument();
     expect(header.parentElement).toHaveStyle({
+      width: "100%",
       "max-width": "61.9375rem",
+      height: "100%",
+      margin: "0 auto",
       padding: "2.5rem 1rem"
     });
 
