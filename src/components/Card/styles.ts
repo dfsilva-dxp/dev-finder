@@ -4,7 +4,7 @@ export const Content = styled.section`
   ${({ theme }) => css`
     background-color: ${theme.colors.panel};
     border-radius: ${theme.border.radius};
-    padding: ${theme.spacings.xsmall};
+    padding: ${theme.spacings.medium};
 
     display: flex;
     align-items: flex-start;
