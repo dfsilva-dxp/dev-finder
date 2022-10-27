@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    border: 2px solid ${theme.colors.panel};
+    border: 2px solid ${theme.colors.light};
 
     width: 120px;
     height: 120px;
