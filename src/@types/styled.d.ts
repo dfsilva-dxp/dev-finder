@@ -48,6 +48,7 @@ declare module "styled-components" {
       text: string;
       light: string;
       panel: string;
+      cover: string;
     };
   }
 }
