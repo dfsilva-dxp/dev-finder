@@ -18,7 +18,7 @@ describe("<Button/>", () => {
     });
     expect(screen.getByRole("button", { name: /theme/i })).toHaveStyleRule(
       "outline",
-      "2px solid #0178FF",
+      "2px solid #FE5873",
       {
         modifier: ":hover"
       }

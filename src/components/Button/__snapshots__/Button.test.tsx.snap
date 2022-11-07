@@ -27,7 +27,7 @@ exports[`<Button/> should render an icon 1`] = `
 
 .c0:hover,
 .c0:focus {
-  outline: 2px solid #0178FF;
+  outline: 2px solid #FE5873;
   outline-offset: 0.125rem;
 }
 
