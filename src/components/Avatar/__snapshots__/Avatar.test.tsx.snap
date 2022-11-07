@@ -3,8 +3,8 @@
 exports[`<Avatar/> should render currectly 1`] = `
 .c0 {
   border: 2px solid #E0E0E0;
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   overflow: hidden;
   padding: 4px;

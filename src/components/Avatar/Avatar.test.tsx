@@ -15,8 +15,9 @@ describe("<Avatar/>", () => {
     expect(
       screen.getByRole("img", { name: /user avatar/i }).parentElement
     ).toHaveStyle({
-      width: "120px",
-      height: "120px",
+      border: "2px solid #E0E0E0",
+      width: "90px",
+      height: "90px",
       "border-radius": "50%",
       overflow: "hidden",
       padding: "4px"
