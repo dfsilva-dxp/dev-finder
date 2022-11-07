@@ -1,39 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Card/> should render currectly 1`] = `
-.c1 {
+.c3 {
   border: 2px solid #E0E0E0;
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   overflow: hidden;
   padding: 4px;
 }
 
-.c1 img {
+.c3 img {
   width: 100%;
   border-radius: 50%;
 }
 
 .c0 {
-  background-color: #1F2A48;
-  border-radius: 0.25rem;
-  padding: 2rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  gap: 1.5rem;
-}
-
-.c2 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  background-color: #393656;
+  border-radius: 0.625rem;
+  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -41,15 +26,13 @@ exports[`<Card/> should render currectly 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  gap: 1rem;
 }
 
-.c3 {
+.c1 {
   width: 100%;
+  background-color: #343150;
+  padding: 2.5rem 1rem;
+  text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -58,43 +41,37 @@ exports[`<Card/> should render currectly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.c3 h1 {
-  font-size: 1.25rem;
-}
-
-.c3 a,
-.c3 p {
-  font-weight: 700;
-  font-size: 0.75rem;
-}
-
-.c3 a {
-  display: block;
-  margin-top: 0.5rem;
-  color: #0178FF;
-}
-
-.c3 p {
+.c2 {
+  background-color: transparent;
+  margin-top: -1.25rem;
+  border: 0;
+  border-radius: 0.25rem;
   color: #E0E0E0;
+  line-height: 0;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.c2:hover,
+.c2:focus {
+  outline: 2px solid #FE5873;
+  outline-offset: 0.125rem;
 }
 
 .c4 {
   width: 100%;
-  padding: 1rem 0;
+  margin-top: 0.625rem;
   color: #E0E0E0;
-}
-
-.c5 {
-  width: 100%;
-  background-color: #141C2F;
-  border-radius: 0.25rem;
-  padding: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -103,16 +80,59 @@ exports[`<Card/> should render currectly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 h1 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.c4 a,
+.c4 small {
+  font-weight: 700;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.c4 a {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.c4 a:hover,
+.c4 a:focus {
+  outline: 2px solid #FE5873;
+  outline-offset: 0.125rem;
+}
+
+.c5 {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 0.5rem;
 }
 
-.c6 {
+.c7 {
+  width: 7rem;
+  color: #E0E0E0;
   padding: 0 0.5rem;
-  color: #FFFFFF;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -128,35 +148,44 @@ exports[`<Card/> should render currectly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 0.5rem;
 }
 
-.c6 strong {
+.c6 + .c6 {
+  border-left: 1px solid #E0E0E0;
+}
+
+.c7 svg {
+  margin-bottom: 0.5rem;
+}
+
+.c7 span {
   font-size: 0.75rem;
-}
-
-.c6 span {
-  font-size: 1.75rem;
   font-weight: 700;
 }
 
-.c7 {
+.c8 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  padding: 1rem;
 }
 
-.c7 div {
+.c9 h4 {
+  font-size: 0.875rem;
+  color: #555555;
+}
+
+.c9 p {
+  font-size: 0.75rem;
+  margin-top: 0.625rem;
+}
+
+.c10 {
+  width: 100%;
+  margin-top: 0.625rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.c10 div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -168,7 +197,7 @@ exports[`<Card/> should render currectly 1`] = `
   font-size: 0.75rem;
 }
 
-.c7 div span {
+.c10 div span {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -184,86 +213,132 @@ exports[`<Card/> should render currectly 1`] = `
   gap: 1rem;
 }
 
+.c10 div span svg {
+  color: #FE5873;
+}
+
 <div>
   <section
     class="c0"
   >
-    <div
+    <header
       class="c1"
     >
-      <img
-        alt="User Avatar"
-        src="https://avatars.githubusercontent.com/u/16245261?v=4"
-        title="User Avatar"
-      />
-    </div>
-    <header
-      class="c2"
-    >
+      <button
+        class="c2"
+      >
+        <svg
+          fill="currentColor"
+          height="18"
+          viewBox="0 0 256 256"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            fill="none"
+            height="256"
+            width="256"
+          />
+          <line
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+            x1="200"
+            x2="56"
+            y1="56"
+            y2="200"
+          />
+          <line
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+            x1="200"
+            x2="56"
+            y1="200"
+            y2="56"
+          />
+        </svg>
+      </button>
       <div
         class="c3"
       >
-        <div>
-          <h1>
-            Daniel Silva
-          </h1>
-          <a
-            href="/link"
-          >
-            dfsilva-dxp
-          </a>
-        </div>
-        <p>
-          Joined 2 Fev 2020
-        </p>
+        <img
+          alt="User Avatar"
+          src="https://avatars.githubusercontent.com/u/16245261?v=4"
+          title="User Avatar"
+        />
       </div>
-      <div
-        aria-labelledby="user-bio"
+      <header
         class="c4"
-        role="dialog"
       >
-        <p
-          id="user-bio"
+        <h1>
+          Daniel Silva
+        </h1>
+        <a
+          href="https://github.com/dfsilva-dxp"
         >
-          Lorem ipsum dolor sit amet, consectetur adipis
-        </p>
-      </div>
+          dfsilva-dxp
+        </a>
+        <small>
+          Joined 2 Fev 2020
+        </small>
+      </header>
       <div
         class="c5"
       >
         <span
-          class="c6"
+          class="c6 c7"
         >
-          <strong>
+          <span>
             Repos
-          </strong>
+          </span>
           <span>
-            9
+            122
           </span>
         </span>
         <span
-          class="c6"
+          class="c6 c7"
         >
-          <strong>
+          <span>
             Followers
-          </strong>
+          </span>
           <span>
-            59
+            39
           </span>
         </span>
         <span
-          class="c6"
+          class="c6 c7"
         >
-          <strong>
-            Following
-          </strong>
           <span>
-            43
+            Following
+          </span>
+          <span>
+            66
           </span>
         </span>
       </div>
+    </header>
+    <section
+      class="c8"
+    >
+      <div
+        aria-labelledby="user-bio"
+        class="c9"
+        role="dialog"
+      >
+        <h4>
+          Bio
+        </h4>
+        <p
+          id="user-bio"
+        >
+          Acredito que lidar com pessoas em tempos de informações rápidas, leve e inteligente me faz entender que o sucesso e as respostas estão mesmo nas perguntas.
+        </p>
+      </div>
       <footer
-        class="c7"
+        class="c10"
       >
         <div>
           <span>
@@ -308,7 +383,8 @@ exports[`<Card/> should render currectly 1`] = `
                 stroke-width="16"
               />
             </svg>
-             Suzano - SP
+             
+            Suzano - SP
           </span>
           <span>
             <svg
@@ -351,7 +427,8 @@ exports[`<Card/> should render currectly 1`] = `
                 stroke-width="16"
               />
             </svg>
-             www.dfsilva.dev
+             
+            https://www.dfsilva.dev/
           </span>
         </div>
         <div>
@@ -377,7 +454,8 @@ exports[`<Card/> should render currectly 1`] = `
                 stroke-width="16"
               />
             </svg>
-             dfsilva.dxp
+             
+            dfsilvadxp
           </span>
           <span>
             <svg
@@ -475,11 +553,12 @@ exports[`<Card/> should render currectly 1`] = `
                 y2="136"
               />
             </svg>
-             GWCloud
+             
+            Grapeway Cloud Evolution
           </span>
         </div>
       </footer>
-    </header>
+    </section>
   </section>
 </div>
 `;
