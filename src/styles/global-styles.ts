@@ -19,6 +19,7 @@ ${({ theme }) => css`
   html,
   body {
     background: ${theme.colors.secondary};
+    transition: background 0.15s ease-in-out;
   }
   body {
     overflow-x: hidden;
@@ -42,6 +43,7 @@ ${({ theme }) => css`
   button {
     font: 400 1rem ${theme.font.family}, sans-serif;
     color: ${theme.colors.text};
+    transition: color 0.15s ease-in-out;
   }
   span {
     display: inline-block;

@@ -2,7 +2,7 @@ export default {
   title: "light",
 
   grid: {
-    container: "61.9375rem"
+    container: "45rem"
   },
   border: {
     radius: "0.25rem",
@@ -40,11 +40,12 @@ export default {
   },
 
   colors: {
-    primary: "#0178FF",
-    secondary: "#F2F3F5",
+    primary: "#FE5873",
+    secondary: "#FEFEFE",
     grayDark: "#555555",
     text: "#121214",
     light: "#E0E0E0",
-    panel: "#FFFFFF"
+    panel: "#F8FAFB",
+    cover: "#FE5873"
   }
 };
