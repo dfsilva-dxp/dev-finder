@@ -1,0 +1,37 @@
+export default {
+  login: "dfsilva-dxp",
+  id: 16245261,
+  node_id: "MDQ6VXNlcjE2MjQ1MjYx",
+  avatar_url: "https://avatars.githubusercontent.com/u/16245261?v=4",
+  gravatar_id: "",
+  url: "https://api.github.com/users/dfsilva-dxp",
+  html_url: "https://github.com/dfsilva-dxp",
+  followers_url: "https://api.github.com/users/dfsilva-dxp/followers",
+  following_url:
+    "https://api.github.com/users/dfsilva-dxp/following{/other_user}",
+  gists_url: "https://api.github.com/users/dfsilva-dxp/gists{/gist_id}",
+  starred_url:
+    "https://api.github.com/users/dfsilva-dxp/starred{/owner}{/repo}",
+  subscriptions_url: "https://api.github.com/users/dfsilva-dxp/subscriptions",
+  organizations_url: "https://api.github.com/users/dfsilva-dxp/orgs",
+  repos_url: "https://api.github.com/users/dfsilva-dxp/repos",
+  events_url: "https://api.github.com/users/dfsilva-dxp/events{/privacy}",
+  received_events_url:
+    "https://api.github.com/users/dfsilva-dxp/received_events",
+  type: "User",
+  site_admin: false,
+  name: "Daniel Silva",
+  company: "Grapeway Cloud Evolution",
+  blog: "https://www.dfsilva.dev/",
+  location: "Suzano - SP",
+  email: null,
+  hireable: true,
+  bio: "Acredito que lidar com pessoas em tempos de informações rápidas, leve e inteligente me faz entender que o sucesso e as respostas estão mesmo nas perguntas.",
+  twitter_username: "dfsilvadxp",
+  public_repos: 122,
+  public_gists: 0,
+  followers: 39,
+  following: 66,
+  created_at: "2015-12-10T18:58:00Z",
+  updated_at: "2022-10-27T11:34:56Z"
+};
