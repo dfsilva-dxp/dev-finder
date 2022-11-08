@@ -1,3 +1,4 @@
+import usePersistedState from "hooks/usePersistedState";
 import { createContext, ReactNode, useCallback, useState } from "react";
 
 import api from "services/api";
@@ -44,7 +45,7 @@ interface IUserProviderProps {
 interface IUSerCOntextData {
   searchGithubUser: (username: string) => Promise<void>;
   clearUser: () => void;
-  user: IUser | null;
+  storedUser: IUser | null;
   loading: boolean;
   hasUser: boolean;
   message: string;
@@ -58,32 +59,49 @@ export function UserProvider({ children }: IUserProviderProps) {
   const [message, setMessage] = useState("Pesquise por um usuário!");
   const hasUser = !!user;
 
-  const searchGithubUser = useCallback(async (username: string) => {
-    try {
-      setLoading(true);
-      const response = await api.get(username).then(({ data }) => data);
+  const [storedUser, setStoredUser] = usePersistedState<IUser | null>(
+    "user",
+    user
+  );
 
-      if (response) {
-        setUser(response);
+  const searchGithubUser = useCallback(
+    async (username: string) => {
+      try {
+        setLoading(true);
+        const response = await api.get(username).then(({ data }) => data);
+
+        if (response) {
+          setUser(response);
+          setStoredUser(response);
+        }
+      } catch {
+        setMessage(
+          "Ops... Não encontramos o username pesquisado. Tente fazer uma nova pesquisa :)"
+        );
+        setUser(null);
+      } finally {
+        setLoading(false);
       }
-    } catch {
-      setMessage(
-        "Ops... Não encontramos o username pesquisado. Tente fazer uma nova pesquisa :)"
-      );
-      setUser(null);
-    } finally {
-      setLoading(false);
-    }
-  }, []);
+    },
+    [setStoredUser]
+  );
 
   const clearUser = useCallback(() => {
     setUser(null);
+    setStoredUser(null);
     setMessage("Pesquise por um usuário!");
-  }, []);
+  }, [setStoredUser]);
 
   return (
     <UserContext.Provider
-      value={{ searchGithubUser, clearUser, user, loading, hasUser, message }}
+      value={{
+        searchGithubUser,
+        clearUser,
+        storedUser,
+        loading,
+        hasUser,
+        message
+      }}
     >
       {children}
     </UserContext.Provider>
