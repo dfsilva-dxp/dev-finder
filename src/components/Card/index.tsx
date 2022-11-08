@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import {
   Buildings,
   LinkSimple,
@@ -47,8 +48,10 @@ export default function Card({ user }: ICardProps) {
 
         <Counters>
           <CountDisplay>
-            <span>Repos</span>
-            <span>{user?.public_repos}</span>
+            <NavLink to={`/${user?.login}`}>
+              <span>Repos</span>
+              <span>{user?.public_repos}</span>
+            </NavLink>
           </CountDisplay>
           <CountDisplay>
             <span>Followers</span>

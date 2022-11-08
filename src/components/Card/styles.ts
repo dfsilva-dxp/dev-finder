@@ -91,28 +91,31 @@ export const Counters = styled.div`
 `;
 
 export const CountDisplay = styled.span`
-  ${({ theme }) => css`
-    width: 7rem;
-    color: ${theme.colors.light};
-    padding: 0 ${theme.spacings.xxsmall};
+  &,
+  & a {
+    ${({ theme }) => css`
+      width: 7rem;
+      color: ${theme.colors.light};
+      padding: 0 ${theme.spacings.xxsmall};
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-    & + & {
-      border-left: 1px solid ${theme.colors.light};
-    }
+      & + & {
+        border-left: 1px solid ${theme.colors.light};
+      }
 
-    svg {
-      margin-bottom: ${theme.spacings.xxsmall};
-    }
-    span {
-      font-size: ${theme.font.sizes.xsmall};
-      font-weight: ${theme.font.weight.bold};
-    }
-  `}
+      svg {
+        margin-bottom: ${theme.spacings.xxsmall};
+      }
+      span {
+        font-size: ${theme.font.sizes.xsmall};
+        font-weight: ${theme.font.weight.bold};
+      }
+    `}
+  }
 `;
 
 export const Body = styled.section`
