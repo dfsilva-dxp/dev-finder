@@ -129,7 +129,8 @@ exports[`<Card/> should render currectly 1`] = `
   gap: 0.5rem;
 }
 
-.c7 {
+.c7,
+.c7 a {
   width: 7rem;
   color: #E0E0E0;
   padding: 0 0.5rem;
@@ -150,15 +151,18 @@ exports[`<Card/> should render currectly 1`] = `
   justify-content: center;
 }
 
-.c6 + .c6 {
+.c6 + .c6,
+.c7 a + .c7 a {
   border-left: 1px solid #E0E0E0;
 }
 
-.c7 svg {
+.c7 svg,
+.c7 a svg {
   margin-bottom: 0.5rem;
 }
 
-.c7 span {
+.c7 span,
+.c7 a span {
   font-size: 0.75rem;
   font-weight: 700;
 }
@@ -291,12 +295,17 @@ exports[`<Card/> should render currectly 1`] = `
         <span
           class="c6 c7"
         >
-          <span>
-            Repos
-          </span>
-          <span>
-            122
-          </span>
+          <a
+            class=""
+            href="/dfsilva-dxp"
+          >
+            <span>
+              Repos
+            </span>
+            <span>
+              122
+            </span>
+          </a>
         </span>
         <span
           class="c6 c7"

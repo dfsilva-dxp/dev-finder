@@ -1,4 +1,5 @@
 import { screen } from "@testing-library/react";
+import { BrowserRouter } from "react-router-dom";
 import { renderWithTheme } from "utils/test/helpers";
 
 import Card from ".";
@@ -7,7 +8,11 @@ import userMock from "./mock";
 
 describe("<Card/>", () => {
   it("should render currectly", () => {
-    const { container } = renderWithTheme(<Card user={userMock} />);
+    const { container } = renderWithTheme(
+      <BrowserRouter>
+        <Card user={userMock} />
+      </BrowserRouter>
+    );
 
     expect(
       screen.getByRole("img", { name: /User Avatar/i })
