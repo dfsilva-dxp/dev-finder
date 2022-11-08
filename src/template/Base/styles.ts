@@ -8,7 +8,7 @@ export const Main = styled.main`
 export const Container = styled.div`
   ${({ theme }) => css`
     width: 100%;
-    max-width: ${theme.grid.container};
+    max-width: 45rem;
     height: 100%;
     margin: 0 auto;
     padding: ${theme.spacings.large} ${theme.spacings.xsmall};
