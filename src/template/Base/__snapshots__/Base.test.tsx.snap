@@ -27,7 +27,7 @@ exports[`<Base/> should render header and content 1`] = `
 
 .c3:hover,
 .c3:focus {
-  outline: 2px solid #0178FF;
+  outline: 2px solid #FE5873;
   outline-offset: 0.125rem;
 }
 
@@ -59,7 +59,7 @@ exports[`<Base/> should render header and content 1`] = `
 
 .c1 {
   width: 100%;
-  max-width: 61.9375rem;
+  max-width: 45rem;
   height: 100%;
   margin: 0 auto;
   padding: 2.5rem 1rem;
