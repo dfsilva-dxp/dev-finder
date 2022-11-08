@@ -18,13 +18,13 @@ export default function App() {
   }, [theme, setTheme]);
 
   return (
-    <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <UserProvider>
+    <BrowserRouter>
+      <UserProvider>
+        <ThemeProvider theme={theme}>
           <Router onToggleTheme={toggleTheme} theme={theme.title} />
           <GlobalStyles />
-        </UserProvider>
-      </BrowserRouter>
-    </ThemeProvider>
+        </ThemeProvider>
+      </UserProvider>
+    </BrowserRouter>
   );
 }
