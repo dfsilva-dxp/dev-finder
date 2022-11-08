@@ -62,7 +62,6 @@ exports[`<SearchForm should changes its value when typing 1`] = `
 
 <div>
   <form
-    aria-label="Search a GitHub username"
     class="c0"
   >
     <svg

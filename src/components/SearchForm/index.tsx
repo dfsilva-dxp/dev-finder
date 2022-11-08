@@ -22,7 +22,7 @@ export default function SearchForm() {
   };
 
   return (
-    <Form onSubmit={handleSearchUser} aria-label="Search a GitHub username">
+    <Form onSubmit={handleSearchUser}>
       <MagnifyingGlass size={20} />
       <input
         type="search"
