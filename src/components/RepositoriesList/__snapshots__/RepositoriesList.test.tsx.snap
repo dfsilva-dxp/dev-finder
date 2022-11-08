@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RepositoriesList/> should render with currectly styles 1`] = `
+.c0 {
+  max-height: 75vh;
+  overflow: hidden;
+}
+
+.c0 table {
+  width: 100%;
+  border-spacing: 0 0.5rem;
+}
+
+.c0 table th {
+  padding: 1rem 2rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  text-align: left;
+  border-radius: 0.25rem;
+}
+
+.c0 table td {
+  background: #393656;
+  padding: 1rem 2rem;
+  border: 0;
+}
+
+.c0 table td:last-child {
+  max-width: 40ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c0:hover {
+  overflow-y: scroll;
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+    >
+      <table>
+        <thead>
+          <tr>
+            <th>
+              Name
+            </th>
+            <th>
+              Description
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              ReactJS
+            </td>
+            <td>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit provident culpa doloribus obcaecati nam in fugit tempora ex numquam. Placeat fugiat odit quia qui, ex excepturi eius ut non sed.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+`;
