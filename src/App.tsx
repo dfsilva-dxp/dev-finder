@@ -1,8 +1,12 @@
-import usePersistedState from "hooks/usePersistedState";
 import { useCallback } from "react";
 import { BrowserRouter } from "react-router-dom";
-import Router from "routes/Router";
 import { DefaultTheme, ThemeProvider } from "styled-components";
+
+import Router from "routes/Router";
+
+import { UserProvider } from "context/userContext";
+
+import usePersistedState from "hooks/usePersistedState";
 
 import { Dark, GlobalStyles, Light } from "styles";
 
@@ -16,8 +20,10 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
-        <Router onToggleTheme={toggleTheme} theme={theme.title} />
-        <GlobalStyles />
+        <UserProvider>
+          <Router onToggleTheme={toggleTheme} theme={theme.title} />
+          <GlobalStyles />
+        </UserProvider>
       </BrowserRouter>
     </ThemeProvider>
   );
