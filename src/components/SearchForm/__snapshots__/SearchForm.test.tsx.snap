@@ -4,7 +4,7 @@ exports[`<SearchForm should changes its value when typing 1`] = `
 .c0 {
   padding: 0.5rem;
   border-radius: 0.25rem;
-  background-color: #1F2A48;
+  background-color: #393656;
   outline-offset: 0.125rem;
   border: 2px solid transparent;
   display: -webkit-box;
@@ -20,7 +20,7 @@ exports[`<SearchForm should changes its value when typing 1`] = `
 
 .c0:focus-within {
   outline-offset: 0.125rem;
-  border: 2px solid #0178FF;
+  border: 2px solid #FE5873;
 }
 
 .c0 input[type="search"] {
@@ -41,7 +41,7 @@ exports[`<SearchForm should changes its value when typing 1`] = `
   outline: 0;
   outline-offset: 0.125rem;
   border: 2px solid transparent;
-  background-color: #0178FF;
+  background-color: #FE5873;
   color: #fff;
   font-weight: 700;
 }
@@ -57,7 +57,7 @@ exports[`<SearchForm should changes its value when typing 1`] = `
 }
 
 .c0 svg {
-  color: #0178FF;
+  color: #FE5873;
 }
 
 <div>
