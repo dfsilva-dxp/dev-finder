@@ -1,4 +1,3 @@
-export interface IBaseLayoutProps {
-  onToggleTheme: () => void;
-  theme: string;
-}
+import { IHeaderProps } from "components/Header/types";
+
+export interface IBaseLayoutProps extends IHeaderProps {}
