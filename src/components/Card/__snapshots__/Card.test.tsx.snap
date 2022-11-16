@@ -186,7 +186,7 @@ exports[`<Card/> should render currectly 1`] = `
   width: 100%;
   margin-top: 0.625rem;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  gap: 0.5rem;
 }
 
 .c10 div {
@@ -219,6 +219,12 @@ exports[`<Card/> should render currectly 1`] = `
 
 .c10 div span svg {
   color: #FE5873;
+}
+
+@media (min-width:523px) {
+  .c10 {
+    grid-template-columns: repeat(2,1fr);
+  }
 }
 
 <div>

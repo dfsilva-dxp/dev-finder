@@ -145,7 +145,11 @@ export const Footer = styled.footer`
     margin-top: 0.625rem;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    gap: ${theme.spacings.xxsmall};
+
+    @media (min-width: 523px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     div {
       display: flex;

@@ -8,14 +8,14 @@ const props = {
 };
 
 describe("<Header/>", () => {
-  it("should render a heading", () => {
+  it("should render currectly", () => {
     const onToggleTheme = jest.fn();
     renderWithTheme(<Header onToggleTheme={onToggleTheme} {...props} />);
 
     expect(
-      screen.getByRole("heading", { name: /devFinder/i })
+      screen.getByRole("heading", { name: /devfinder/i })
     ).toBeInTheDocument();
 
-    expect(screen.getByRole("button")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /light/i })).toBeInTheDocument();
   });
 });
