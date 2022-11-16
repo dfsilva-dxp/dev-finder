@@ -2,14 +2,10 @@ import { Route, Routes } from "react-router-dom";
 
 import { Base } from "template";
 
-import { Home } from "pages";
+import { Home, Repositories } from "pages";
+import { IHeaderProps } from "components/Header/types";
 
-interface IRouterProps {
-  onToggleTheme: () => void;
-  theme: string;
-}
-
-export default function Router({ onToggleTheme, theme }: IRouterProps) {
+export default function Router({ onToggleTheme, theme }: IHeaderProps) {
   return (
     <Routes>
       <Route
@@ -17,7 +13,7 @@ export default function Router({ onToggleTheme, theme }: IRouterProps) {
         element={<Base onToggleTheme={onToggleTheme} theme={theme} />}
       >
         <Route index element={<Home />} />
-        <Route path="/:id" element={<h1>Others</h1>} />
+        <Route path="/:id" element={<Repositories />} />
       </Route>
 
       <Route path="*" element={<h1>Not found</h1>} />
