@@ -38,12 +38,20 @@ export interface IUser {
   updated_at: string;
 }
 
+export interface IRepository {
+  id: number;
+  full_name: string;
+  html_url: string;
+  description: string;
+}
+
 interface IUserProviderProps {
   children: ReactNode;
 }
 
 interface IUSerCOntextData {
   searchGithubUser: (username: string) => Promise<void>;
+  getUserRepositories: (username: string) => Promise<void>;
   clearUser: () => void;
   storedUser: IUser | null;
   loading: boolean;
@@ -86,6 +94,28 @@ export function UserProvider({ children }: IUserProviderProps) {
     [setStoredUser]
   );
 
+  const getUserRepositories = useCallback(
+    async (username: string) => {
+      try {
+        setLoading(true);
+        const response = await api
+          .get(`${username}/repos`)
+          .then(({ data }) => data);
+
+        if (response) {
+          setUser(response);
+          setStoredUser(response);
+        }
+      } catch {
+        setMessage("Ops... Não encontramos repositórios para este username");
+        setUser(null);
+      } finally {
+        setLoading(false);
+      }
+    },
+    [setStoredUser]
+  );
+
   const clearUser = useCallback(() => {
     setUser(null);
     setStoredUser(null);
@@ -96,6 +126,7 @@ export function UserProvider({ children }: IUserProviderProps) {
     <UserContext.Provider
       value={{
         searchGithubUser,
+        getUserRepositories,
         clearUser,
         storedUser,
         loading,
