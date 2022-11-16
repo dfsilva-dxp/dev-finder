@@ -45,7 +45,7 @@ export default {
     grayDark: "#555555",
     text: "#121214",
     light: "#E0E0E0",
-    panel: "#F8FAFB",
+    panel: "#F2F3F5",
     cover: "#FE5873"
   }
 };
