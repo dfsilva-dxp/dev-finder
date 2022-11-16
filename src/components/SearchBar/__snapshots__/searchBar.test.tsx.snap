@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchBar should changes its value when typing 1`] = `
+.c0 {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #393656;
+  outline-offset: 0.125rem;
+  border: 2px solid transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.c0:focus-within {
+  outline-offset: 0.125rem;
+  border: 2px solid #FE5873;
+}
+
+.c0 input[type="search"] {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.c0 button[type="submit"] {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: 0;
+  box-shadow: 0;
+  outline: 0;
+  outline-offset: 0.125rem;
+  border: 2px solid transparent;
+  background-color: #FE5873;
+  color: #fff;
+  font-weight: 700;
+}
+
+.c0 button[type="submit"]:hover {
+  -webkit-filter: brightness(0.9);
+  filter: brightness(0.9);
+}
+
+.c0 button[type="submit"]:focus {
+  outline-offset: 0.125rem;
+  border: 2px solid #fff;
+}
+
+.c0 svg {
+  color: #FE5873;
+}
+
+<div>
+  <form
+    class="c0"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 256 256"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        fill="none"
+        height="256"
+        width="256"
+      />
+      <circle
+        cx="116"
+        cy="116"
+        fill="none"
+        r="84"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+        x1="175.4"
+        x2="224"
+        y1="175.4"
+        y2="224"
+      />
+    </svg>
+    <input
+      placeholder="Search GitHub username..."
+      type="search"
+      value="This is my new text"
+    />
+    <button
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+</div>
+`;
